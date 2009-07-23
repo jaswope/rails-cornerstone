@@ -9,6 +9,14 @@ class ApplicationController < ActionController::Base
 
   protect_from_forgery
 
+
+  protected
+
+  def clear_authlogic_session
+    sess = current_user_session
+    sess.destroy if sess
+  end
+
   private
 
   def current_user
