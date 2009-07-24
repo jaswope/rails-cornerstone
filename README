@@ -1,4 +1,38 @@
-== Welcome to Rails
+== About Rails Cornerstone
+
+Rails Cornerstone is a template Rails application that includes/uses:
+
+1) Authentication with Authlogic
+2) Authorization with Lockdown
+3) Haml for views
+4) Password reset functionality 
+  a) example Mailer
+  a) example SMTP settings for using GMAIL
+ 
+
+For the above, the following gems are required:
+
+1) haml
+2) authlogic
+3) lockdown
+4) smtp_tls
+
+Soon to be added:
+
+1) RSpec with Lockdown helpers and starter specs to show how to spec with Lockdown.
+  a) In the meantime you can look at the (somewhat outdated) lockdown-rails-project.  It's my (soon to be updated) rspec app for Lockdown.  I use it to test various scenarios/rails updates: http://github.com/stonean/lockdown-rails-app/tree/master
+
+2) ...? Suggestions?
+
+
+This template was thrown together to flesh out issues with my "Using Lockdown with Authlogic" wiki page:  http://stonean.com/page/lockdown-with-authlogic
+
+Forking this project and submitting patches is very welcome.
+
+Thanks!
+
+
+== The original Rails README:
 
 Rails is a web-application framework that includes everything needed to create 
 database-backed web applications according to the Model-View-Control pattern. 
