@@ -1,7 +1,7 @@
 # Be sure to restart your server when you modify this file
 
 # Specifies gem version of Rails to use when vendor/rails is not present
-RAILS_GEM_VERSION = '2.3.2' unless defined? RAILS_GEM_VERSION
+RAILS_GEM_VERSION = '2.3.3' unless defined? RAILS_GEM_VERSION
 
 # Bootstrap the Rails environment, frameworks, and default configuration
 require File.join(File.dirname(__FILE__), 'boot')
@@ -24,7 +24,6 @@ Rails::Initializer.run do |config|
 
   config.gem 'haml'
   config.gem 'authlogic'
-  config.gem 'smtp_tls'
 
   config.gem 'lockdown', :lib => false
 
@@ -48,16 +47,4 @@ Rails::Initializer.run do |config|
   # config.i18n.default_locale = :de
 end
 
-
-require 'smtp_tls'
-
-ActionMailer::Base.delivery_method = :smtp
-
-ActionMailer::Base.smtp_settings = {
-  :address => 'smtp.gmail.com',
-  :port => 587,
-  :user_name => 'user@mycooldomain.com',
-  :password => 'my_password',
-  :authentication => :plain,
-}
 
